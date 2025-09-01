@@ -1,0 +1,34 @@
+<!-- Yool Lee, 03/21 -->
+<html>
+<head>
+<script>
+
+	function mygrade() {
+	var numscore = Number(document.getElementById("score").value);
+	if (isNaN(numscore) || numscore < 0 || numscore > 100) {
+		lettergrade = " ..hey hold on, this input isn't a valid score!!"
+	}	else if (numscore >= 90) {
+		lettergrade = "A"
+	}	else if (numscore >= 80) {
+		lettergrade = "B"
+	}	else if (numscore >= 70) {
+		lettergrade = "C"
+	}	else if (numscore >= 60) {
+		lettergrade = "D"
+	}	else if (numscore < 60) {
+		lettergrade = "F";
+	}	
+	alert("Grade is: " + lettergrade)
+}
+
+</script>
+</head>
+<body>
+
+	<p>Enter score out of 100 in the box:</p>
+	<input id="score"/>
+	<button onclick="mygrade()">Click</button>
+
+</body>
+
+</html>

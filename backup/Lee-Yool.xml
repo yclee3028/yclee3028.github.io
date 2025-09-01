@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Yool Lee, 03/22 -->
+<!-- ?xml declaration must always be the top line of the page -->
+<Journal>
+<journal_entry id="1">
+	<body>Today is my first journal entry! I'm working on my XML skills.</body>
+<!-- "<body>" to "</body>": Opening and closing tags must be written with the same case-->
+	<date_posted>Friday, June 15th, 2012</date_posted>
+</journal_entry>
+<journal_entry id="2">
+<!-- "'b'" to ""2"": inconsistency in increments used for counting journal entries-->
+	<body>Enough XML, today I'm going to the beach!
+		<pic>beachtime.jpg</pic>
+	</body>
+	<date_posted>Saturday, June 16th, 2012</date_posted>
+<!-- ", june" to ", June": inconsistency in case/format of date description-->
+</journal_entry>
+<journal_entry id="3">
+<!-- "'3"" to ""3"": change to same type of quotation marks as previous id's on each side for consistency-->
+	<body>Back to the XML grind...</body>
+	<date_posted>Monday, June 18th, 2012</date_posted>
+<!-- "18th" to "18th, 2012": inconsistency with date formatting, assuming that whoever wrote this did not wait at least a year to get back into the XML grind-->
+</journal_entry>
+</Journal>
+<!-- "journal" to "Journal": Opening and closing tags must be written with the same case -->
