@@ -1,1 +1,22 @@
-.backup/
+
+# General
+.DS_Store
+*.log
+.vscode/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Sensitive files
+.env
+config.json
+secrets.json
+credentials/
+
+# Web project specifics
+node_modules/
+dist/
+build/

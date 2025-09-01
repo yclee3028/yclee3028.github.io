@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yool's College Website</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p title="Yool likes Aeronautics">A web site for College student</p>
+        <p id="season-display">Current Season: Loading...</p>
+    </main>
+    <script>
+        const month = new Date().getMonth() + 1;
+        const season = month <= 2 || month === 12 ? 'Winter' :
+                       month <= 5 ? 'Spring' :
+                       month <= 8 ? 'Summer' : 'Fall';
+        document.getElementById('season-display').textContent = `Current Season: ${season}`;
+    </script>
+</body>
+</html>
